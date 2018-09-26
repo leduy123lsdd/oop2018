@@ -10,11 +10,11 @@ public class Fraction {
     private int denominator = 0;
 
     public int getNumerator() {
-        return numerator;
+        return this.numerator;
     }
 
     public int getDenominator() {
-        return denominator;
+        return this.denominator;
     }
 
     public void setNumerator(int a) {
@@ -102,7 +102,14 @@ public class Fraction {
     }
 
     public static void main(String[] args) {
-        //System.out.println("dff");
+        Fraction Fraction1 = new Fraction(-3,4);
+        Fraction Fraction2 = new Fraction(1,4);
+
+        Fraction1.add(Fraction2);
+        Fraction1.multiply(Fraction2);
+        Fraction1.subtract(Fraction2);
+        Fraction1.divide(Fraction2);
+        Fraction1.equals(Fraction2);
 
     }
 

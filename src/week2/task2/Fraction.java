@@ -90,7 +90,8 @@ public class Fraction {
         return newFraction;
     }
 
-    public Boolean equals(Fraction other) {
+    public boolean equals(Object obj) {
+        Fraction other = (Fraction) obj;
         this.minimalFraction();
         other.minimalFraction();
         Boolean result = false;

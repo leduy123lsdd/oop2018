@@ -23,11 +23,12 @@ public class Task1 {
         // TODO: Tìm số fibonacci ở vị trí n
         int a0 = 0;
         int a1 = 1;
-        int result = 0;
-        int index = 3;
 
-        if(n == 1) return a0;
-        if(n == 2) return a1;
+        int result = 0;
+        int index = 2;
+
+        if(n == 0) return a0;
+        if(n == 1) return a1;
 
         while (index <= n) {
             result = a1 + a0;
@@ -37,14 +38,13 @@ public class Task1 {
         }
             return result;
     }
-
     public static void main(String[] args) {
         //GCD
         int a = gcd(3 ,0);
         System.out.print("Gcd: " + a + "\n");
 
         //Fibonaci
-        int n = 8;
+        int n = 3;
         int fibonaci = fibonacci(n);
         System.out.print("The fibonaci number in position " + n + " is: "+ fibonaci + "\n");
 
